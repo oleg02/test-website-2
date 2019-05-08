@@ -3,6 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
+const glob = require('glob')
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 
 const PATHS = {
   src: path.join(__dirname, '../src'),
@@ -28,7 +30,8 @@ module.exports = {
       test: /\.js$/,
       loader: 'babel-loader',
       exclude: '/node_modules/'
-    }, {
+    },
+    {
       test: /\.vue$/,
       loader: 'vue-loader',
       options: {
@@ -36,13 +39,22 @@ module.exports = {
           scss: 'vue-style-loader!css-loader!sass-loader'
         }
       }
-    }, {
+    },
+    {
       test: /\.(png|jpg|gif|svg)$/,
       loader: 'file-loader',
       options: {
         name: '[name].[ext]'
       }
-    }, {
+    },
+    {
+      test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]'
+      }
+    },
+    {
       test: /\.scss$/,
       use: [
         'style-loader',
@@ -83,6 +95,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].css`,
     }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/*`, { nodir: true }),
+    }),
+
     // Copy HtmlWebpackPlugin and change index.html for another html page
     new HtmlWebpackPlugin({
       hash: false,
@@ -91,6 +107,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
+      { from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts` },
       { from: `${PATHS.src}/static`, to: '' },
     ])
   ],
