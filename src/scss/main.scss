@@ -3,6 +3,7 @@
 @import "utils/mixins";
 @import "utils/fonts";
 
+
 html {
   line-height: $mainLineHeight;
 	font-size: $mainFontSize;
@@ -60,8 +61,6 @@ section, .section {
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  margin: 0 auto;
 }
 
 .content-wrapper {
@@ -88,3 +87,4 @@ section, .section {
 }
 
 @import "modules/wrapper.scss";
+@import "modules/header.scss";

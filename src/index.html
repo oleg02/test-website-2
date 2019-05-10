@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Webpack</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,800" rel="stylesheet">
+
 </head>
+
 <body>
 
   <!-- main wrapper -->
   <div class="wrapper">
-    <div id="app">
-      <header>
-        <!-- header here -->
-      </header>
 
-      <!-- wrapper for content -->
-      <div class="content-wrapper">
-
-        <!--  expamle section -->
-        <section id="main">
-          <div class="container">
-            <h1>Webpack</h1>
-            <button @click="component = !component">Show vue component</button>
+    <header class="header">
+      <!-- header here -->
+      <div class="container">
+        <div class="sitebar">
+          <div class="logo">
+            <a href="">
+              <img class="logo-img" src="./assets/img/Group 1.svg" alt="logo">
+              <span class="logo-descr">Helgo</span>
+            </a>
           </div>
-        </section>
-        <example-component v-if="component"></example-component>
+          <nav class="nav">
+            <ul class="menu">
+              <li><a class="menu-items" href="">Home</a></li>
+              <li><a class="menu-items" href="">User case</a></li>
+              <li><a class="menu-items" href="">Pricing</a></li>
+              <li><a class="menu-items" href="">Contact</a></li>
+              <li><a class="menu-items" href="">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-content">
+          <div class="left-container">
+            <div class="wrap-header-con">
+              <p class="header-descr">HI, WE'RE HELGO AGENCY</p>
+              <h1>CLEAN SIMPLE<br>
+                & RESPONSIVE</h1>
+              <button class="more">OUR PROJECTS</button>
+            </div>
+          </div>
+          <div class="right-container">
+            <img class="header-content-img" src="./assets/img/img2.svg" alt="">
+          </div>
+        </div>
+      </div>
 
-      <footer>
-        <!-- footer here -->
-      </footer>
-    </div>
 
-    <!-- end content wrapper -->
-    </div>
+    </header>
 
-  <!-- end main wrapper -->
   </div>
 
 </body>
+
 </html>
