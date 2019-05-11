@@ -1,0 +1,37 @@
+.potr-cat-cont{
+  display: flex;
+  justify-content: space-between;
+  .category{
+    width: rem(246);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+
+    .cat-title{
+      font-size: rem(40);
+      font-weight: 400;
+      color: $danger-color;
+      line-height: rem(50);
+      margin: rem(27) 0;
+    }
+
+    .cat-descr{
+      padding: 0 1rem;
+      font-size: rem(16);
+      line-height: rem(29);
+    }
+    &:before{
+      content: "";
+      width: 1px;
+      height: rem(153);
+      position: absolute;
+      background-color: #000;
+      right: -50%;
+      top: 25%;
+    }
+    &:last-child:before{  
+      background-color: transparent;      
+    }
+  }
+}

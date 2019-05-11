@@ -8,14 +8,13 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  min-height: 800px
+  min-height:900px
   }
 
 .sitebar{
   display: flex;
-  padding: .5rem 1rem;
   justify-content: space-between;
-  margin-top: rem(18);
+  margin: rem(62);
   .logo{
     display: flex;
     position: relative;
@@ -63,8 +62,10 @@
   .left-container {
     display: flex;
     align-items: center;
-    flex-grow: 6;
+    flex-grow: 9;
     color: $default-color;
+        justify-content: flex-end;
+    align-items: center;
     .header-descr{
       font-size: rem(40);
       font-weight: 300;
@@ -75,27 +76,27 @@
       font-weight: 900;
       line-height: rem(130);
     }
-    .more {
+    .btn-more {
       font-size: rem(17);
       border: none;
-      background-color: #28123E;
+      background-color: $success-color;
       padding: rem(14) rem(19);
       color: $default-color;
       font-weight: 600;
-      color: #fff;
+      color: $default-color;
       border-radius: 9px;
-      margin-top: rem(60);
+      margin-top: rem(80);
     }
   }
   .right-container{
     display: flex;
     justify-content: center;
-    flex-grow: 4;
+    flex-grow: 1;
     align-items: flex-end;
     display: flex;
     flex-direction: column;
     .header-content-img{
-      width: rem(675);
+      width: rem(700);
     }
   }
 }
