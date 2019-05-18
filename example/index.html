@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .column {
+      display: none;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .column.show.pag {
+      display: block;
+    }
+
+    .column.show {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MAIN (Center website) -->
+  <div class="main">
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+      <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+      <button class="btn" onclick="filterSelection('people')"> People</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row ">
+      <div data-num=1 class="column nature">
+        <img src="https://picsum.photos/id/412/300/300" alt="Mountains" style="width:100%">
+      </div>
+      <div data-num=2 class="column nature">
+        <img src="https://picsum.photos/id/321/300/300" alt="Lights" style="width:100%">
+      </div>
+      <div data-num=3 class="column nature">
+        <img src="https://picsum.photos/id/222/300/300" alt="Nature" style="width:100%">
+      </div>
+      <div data-num=4 class="column cars">
+        <img src="https://picsum.photos/id/523/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=5 class="column cars">
+        <img src="https://picsum.photos/id/235/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=6 class="column cars">
+        <img src="https://picsum.photos/id/123/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=7 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=8 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=9 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=10 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=11 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=12 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=1 class="column nature">
+        <img src="https://picsum.photos/id/412/300/300" alt="Mountains" style="width:100%">
+      </div>
+      <div data-num=2 class="column nature">
+        <img src="https://picsum.photos/id/321/300/300" alt="Lights" style="width:100%">
+      </div>
+      <div data-num=3 class="column nature">
+        <img src="https://picsum.photos/id/222/300/300" alt="Nature" style="width:100%">
+      </div>
+      <div data-num=4 class="column cars">
+        <img src="https://picsum.photos/id/523/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=5 class="column cars">
+        <img src="https://picsum.photos/id/235/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=6 class="column cars">
+        <img src="https://picsum.photos/id/123/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=7 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=8 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=9 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=10 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=11 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+      <div data-num=12 class="column people">
+        <img src="https://picsum.photos/id/237/300/300" alt="Car" style="width:100%">
+      </div>
+
+      <!-- END GRID -->
+    </div>
+    <div class="paginator" onclick="pagination(event)"></div>
+
+    <!-- END MAIN -->
+  </div>
+
+  <script src="common.js"></script>
+</body>
+
+</html>

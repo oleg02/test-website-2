@@ -6,8 +6,13 @@ import './scss/main.scss'
 // CSS (example)
 import './css/main.css'
 
+import Glide from '@glidejs/glide'
+
+new Glide('.glide').mount()
+
+
 // Bootstrap (example)
-// import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
+// import Bootstrap from 'bootstrap/dist/css/bootstrap.grid.css'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 // import 'vue'

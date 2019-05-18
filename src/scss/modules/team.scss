@@ -1,0 +1,49 @@
+.team {
+  text-align: center;
+
+  .taam-wrap {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+
+    .team-img-cont:nth-child(2) {
+      margin-top: 5rem;
+    }
+
+    .team-img-cont:nth-child(3) {
+      margin-top: 10rem;
+    }
+
+    .team-img-cont {
+      img {
+        width: 388px;
+        height: 550px;
+        object-fit: cover;
+        border-radius: 30px;
+      }
+    }
+  }
+}
+
+.team-title {
+  font-size: rem(40);
+  font-weight: 900;
+  color: $primary-color;
+  line-height: rem(78);
+}
+
+.team-descr {
+  font-size: rem(30);
+  font-weight: 400;
+  color: $danger-color;
+  line-height: rem(78);
+  margin: 0;
+}
+
+img.snake {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+}

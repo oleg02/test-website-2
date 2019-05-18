@@ -2,30 +2,32 @@
 
 
 
-.header{
+.header {
   height: 100vh;
-  background-image: url('../img/bg.jpg');
+  background-image: url('../img/Mask Group 10@2x.png');
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  min-height:900px
-  }
+  min-height: 900px
+}
 
-.sitebar{
+.sitebar {
   display: flex;
   justify-content: space-between;
   margin: rem(62);
-  .logo{
+
+  .logo {
     display: flex;
     position: relative;
     flex: 1;
 
 
-    .logo-img{
+    .logo-img {
       height: rem(63);
       position: absolute;
       left: rem(-42);
     }
+
     .logo-descr {
       font-family: $mainFont;
       font-weight: 500;
@@ -35,10 +37,10 @@
     }
   }
 
-  .nav{
+  .nav {
     flex: 1;
 
-    .menu{
+    .menu {
       display: flex;
       justify-content: space-between;
       height: 100%;
@@ -52,52 +54,57 @@
   }
 
 
-  
+
 }
 
 .header-content {
   display: flex;
   height: 80vh;
   min-height: 700px;
+
   .left-container {
     display: flex;
     align-items: center;
     flex-grow: 9;
     color: $default-color;
-        justify-content: flex-end;
+    justify-content: flex-end;
     align-items: center;
-    .header-descr{
+
+    .header-descr {
       font-size: rem(40);
       font-weight: 300;
       margin: 0;
     }
-    h1{
+
+    h1 {
       font-size: rem(104);
       font-weight: 900;
       line-height: rem(130);
     }
-    .btn-more {
-      font-size: rem(17);
-      border: none;
-      background-color: $success-color;
-      padding: rem(14) rem(19);
-      color: $default-color;
-      font-weight: 600;
-      color: $default-color;
-      border-radius: 9px;
-      margin-top: rem(80);
-    }
   }
-  .right-container{
+
+  .right-container {
     display: flex;
     justify-content: center;
     flex-grow: 1;
     align-items: flex-end;
     display: flex;
     flex-direction: column;
-    .header-content-img{
+
+    .header-content-img {
       width: rem(700);
     }
   }
 }
 
+.btn-more {
+  font-size: rem(17);
+  border: none;
+  background-color: $success-color;
+  padding: rem(14) rem(19) rem(12);
+  color: $default-color;
+  font-weight: 600;
+  color: $default-color;
+  border-radius: 9px;
+  margin-top: rem(80);
+}

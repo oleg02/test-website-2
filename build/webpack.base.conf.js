@@ -3,8 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
-const glob = require('glob')
-const PurgecssPlugin = require('purgecss-webpack-plugin')
+// const glob = require('glob')
+// const PurgecssPlugin = require('purgecss-webpack-plugin')
 
 const PATHS = {
   src: path.join(__dirname, '../src'),
@@ -95,9 +95,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].css`,
     }),
-    new PurgecssPlugin({
-      paths: glob.sync(`${PATHS.src}/*`, { nodir: true }),
-    }),
+    // new PurgecssPlugin({
+    //   paths: glob.sync(`${PATHS.src}/*`, { nodir: true }),
+    // }),
 
     // Copy HtmlWebpackPlugin and change index.html for another html page
     new HtmlWebpackPlugin({
