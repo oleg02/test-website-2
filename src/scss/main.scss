@@ -63,6 +63,7 @@ section,
 .section {
   position: relative;
   padding: 40px 0;
+  text-align: center;
 
   @media screen and (max-width: $desktopWidth) {
     padding: 36px 0;
@@ -88,6 +89,34 @@ section,
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+
+.top-descr {
+  font-size: rem(40);
+  font-weight: 500;
+  color: $primary-color;
+  line-height: rem(100);
+  margin: 0;
+}
+
+.about-title {
+  font-size: rem(60);
+  font-weight: 900;
+  color: $success-color;
+  line-height: rem(78);
+}
+
+.about-bottom-descr {
+  font-size: rem(20);
+  font-weight: 400;
+  line-height: rem(78);
+  margin: 0;
+  color: $danger-color;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .container {
@@ -117,3 +146,5 @@ section,
 @import "modules/portfolio.scss";
 @import "modules/team.scss";
 @import "modules/clients.scss";
+@import "modules/reviews.scss";
+@import "modules/pricing.scss";

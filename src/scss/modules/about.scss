@@ -5,24 +5,16 @@
 .about-container {
   display: flex;
   height: 710px;
+  text-align: left;
 
-
+  .about-bottom-descr {
+    line-height: rem(50);
+    margin-top: 2rem;
+  }
 }
 
-.about-title {
-  font-size: rem(60);
-  font-weight: 900;
-  color: $success-color;
-  line-height: rem(78);
-  margin-bottom: rem(30);
-}
 
-.about-bottom-descr {
-  font-size: rem(20);
-  font-weight: 400;
-  line-height: rem(50);
-  color: $danger-color;
-}
+
 
 .about-img-container,
 .about-content {
@@ -40,17 +32,7 @@ img.about-img {
 }
 
 
-.top-descr {
-  font-size: rem(40);
-  font-weight: 400;
-  color: $primary-color;
-  line-height: rem(100);
-  margin: 0;
 
-  .uppercase {
-    text-transform: uppercase;
-  }
-}
 
 .small_triangle1,
 .small_triangle2 {

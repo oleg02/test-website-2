@@ -7,8 +7,21 @@ import './scss/main.scss'
 import './css/main.css'
 
 import Glide from '@glidejs/glide'
+var o = {
+  type: 'carousel',
+  startAt: 0,
+  perView: 4,
 
-new Glide('.glide').mount()
+}
+var b = {
+  type: 'carousel',
+  startAt: 0,
+  perView: 1,
+
+}
+new Glide('.glide', o).mount()
+
+new Glide('.glide-reviews', b).mount()
 
 
 // Bootstrap (example)
