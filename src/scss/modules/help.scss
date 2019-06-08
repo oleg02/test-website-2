@@ -1,0 +1,41 @@
+.help {
+  background-color: #262626;
+  text-align: left;
+  padding: 6.3rem 0;
+}
+
+.help-wrap {
+  display: flex;
+}
+
+.h-left {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  color: $default-color;
+  padding: 0 3rem;
+
+  .h-title {
+    font-size: rem(50);
+    font-weight: 900;
+    line-height: rem(78);
+  }
+}
+
+.h-descr {
+  font-size: rem(25);
+  line-height: rem(32);
+  margin: 0;
+}
+
+.h-right {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  display: flex;
+
+  .btn-more {
+    margin: auto;
+    margin: auto;
+    background-color: $primary-color;
+    padding: 1.4rem;
+  }
+}

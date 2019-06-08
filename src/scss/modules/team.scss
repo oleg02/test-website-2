@@ -1,9 +1,9 @@
 .team {
   text-align: center;
 
-  .taam-wrap {
+  .team-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 5rem;
 
     .team-img-cont:nth-child(2) {
@@ -16,10 +16,10 @@
 
     .team-img-cont {
       img {
-        width: 388px;
-        height: 550px;
+        width: rem(388);
+        height: rem(550);
         object-fit: cover;
-        border-radius: 30px;
+        border-radius: rem(30);
       }
     }
   }

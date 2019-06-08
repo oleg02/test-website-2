@@ -7,10 +7,16 @@ import './scss/main.scss'
 import './css/main.css'
 
 import Glide from '@glidejs/glide'
+
+var count = 4;
+
+if (screen.width <= 699) {
+  count = 2
+}
 var o = {
   type: 'carousel',
   startAt: 0,
-  perView: 4,
+  perView: count,
 
 }
 var b = {

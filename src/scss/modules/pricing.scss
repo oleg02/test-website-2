@@ -1,8 +1,99 @@
 .pricing {
+  margin-bottom: 12rem;
+
   .figure {
     position: absolute;
-    left: -20%;
-    top: -102px;
+    left: -17%;
+    top: -180px;
     z-index: -1;
+    width: 96rem;
+
+  }
+
+  .price-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+
+    .price-card {
+      padding: rem(25) rem(82);
+      padding-top: 0;
+      font-size: rem(20);
+      font-weight: 300;
+      width: rem(434);
+      background: #fff;
+      border-radius: rem(65);
+      box-shadow: 0 rem(16) rem(50) rgba(125, 199, 221, 0.22);
+
+      img.img-card {
+        height: 7rem;
+        margin-top: rem(115);
+      }
+
+      .price-title {
+        font-size: rem(30);
+        font-weight: 500;
+        line-height: rem(37);
+        padding: rem(35) 0;
+      }
+
+      hr {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        margin: 0;
+      }
+
+
+    }
+  }
+}
+
+.greater {
+  font-weight: 500 !important;
+  color: #000 !important;
+}
+
+.price-card:nth-child(2) {
+  transform: scale(1.15);
+
+  .button-card {
+    background: linear-gradient(rgb(243, 102, 144) 1%, rgb(226, 72, 164) 100%);
+    box-shadow: 0 rem(5) rem(17) rgba(201, 33, 140, 0.43);
+    border: none;
+    color: #fff;
+  }
+}
+
+.button-card {
+  border: rem(3) solid #F271AC;
+  padding: rem(15) rem(20);
+  border-radius: 40px;
+  color: #F3658E;
+  margin-top: rem(16);
+  display: inline-block;
+}
+
+.prece {
+  color: #F3658E;
+  display: inline-block;
+
+  p {
+    font-size: rem(76);
+    margin: 0;
+    font-weight: 400;
+    line-height: rem(93);
+    position: relative;
+
+    .dollar {
+      font-size: rem(28);
+      font-weight: 300;
+      position: absolute;
+      left: rem(-17);
+      top: rem(-20);
+    }
+
+    .mon {
+      font-size: rem(27);
+      font-weight: 300;
+    }
   }
 }

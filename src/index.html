@@ -10,38 +10,59 @@
 
 </head>
 
-<body>
+<body class="body">
 
   <!-- main wrapper -->
   <div class="wrapper">
-
-    <header class="header">
-      <!-- header here -->
+    <div class="header-top">
       <div class="container">
         <div class="sitebar">
           <div class="logo">
-            <a href="">
+            <a class="logo-wrap" href="/">
               <img class="logo-img" src="./assets/img/Group 1.svg" alt="logo">
               <span class="logo-descr">Helgo</span>
             </a>
           </div>
           <nav class="nav">
-            <ul class="menu">
+
+            <div id="menu-button" class="menu-button">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+
+            <ul id="menu" class="menu">
               <li><a class="menu-items" href="">Home</a></li>
               <li><a class="menu-items" href="">User case</a></li>
               <li><a class="menu-items" href="">Pricing</a></li>
               <li><a class="menu-items" href="">Contact</a></li>
               <li><a class="menu-items" href="">About Us</a></li>
+              <li><a class="menu-items">
+                  <div class="search-bar">
+                    <input type="text" />
+                  </div>
+                  <div class="search">
+                    <div class="search-icon"></div>
+                  </div>
+                </a></li>
             </ul>
           </nav>
         </div>
+      </div>
+    </div>
+
+
+    <header class="header">
+      <!-- header here -->
+
+      <div class="container">
         <div class="header-content">
           <div class="left-container">
             <div class="wrap-header-con">
               <p class="header-descr">HI, WE'RE HELGO AGENCY</p>
               <h1>CLEAN SIMPLE<br>
                 & RESPONSIVE</h1>
-              <button class="btn-more">OUR PROJECTS</button>
+              <a href="#" class="btn-more">OUR PROJECTS</a>
             </div>
           </div>
           <div class="right-container">
@@ -52,6 +73,26 @@
 
 
     </header>
+    <div id="mobile-menu" class="mobile-menu overlay">
+
+      <div class="search-bar">
+        <input type="text" />
+      </div>
+      <div class="search">
+        <div class="search-icon"></div>
+      </div>
+
+      <ul>
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Contact</a></li>
+
+      </ul>
+
+    </div>
 
     <section class="about-sec">
       <div class="container">
@@ -87,53 +128,65 @@
     <section class="portfolio-cat">
       <div class="container">
         <div class="potr-cat-cont">
+
           <div class="category">
-            <img src="./assets/img/web-design.svg" alt="web-design">
-            <h3 class="cat-title">Web Design</h3>
-            <p class="cat-descr">
-              Semper lacus cursus porta, feugiat primis in ultrice ligula risus
-            </p>
+            <img class="cat-img" src="./assets/img/web-design.svg" alt="web-design">
+            <div class="category-con">
+              <h3 class="cat-title">Web Design</h3>
+              <p class="cat-descr">
+                Semper lacus cursus porta, feugiat primis in ultrice ligula risus
+              </p>
+
+            </div>
           </div>
 
           <div class="category">
-            <img src="./assets/img/prototyping.svg" alt="web-design">
-            <h3 class="cat-title">Prototyping</h3>
-            <p class="cat-descr">
-              Semper lacus cursus porta, feugiat primis in ultrice ligula risus
-            </p>
+            <img class="cat-img" src="./assets/img/prototyping.svg" alt="web-design">
+            <div class="category-con">
+              <h3 class="cat-title">Prototyping</h3>
+              <p class="cat-descr">
+                Semper lacus cursus porta, feugiat primis in ultrice ligula risus
+              </p>
+
+            </div>
           </div>
 
           <div class="category">
-            <img src="./assets/img/computer.svg" alt="web-design">
-            <h3 class="cat-title">Graphics</h3>
-            <p class="cat-descr">
-              Semper lacus cursus porta, feugiat primis in ultrice ligula risus
-            </p>
+            <img class="cat-img" src="./assets/img/computer.svg" alt="web-design">
+            <div class="category-con">
+              <h3 class="cat-title">Graphics</h3>
+              <p class="cat-descr">
+                Semper lacus cursus porta, feugiat primis in ultrice ligula risus
+              </p>
+
+            </div>
           </div>
 
           <div class="category">
-            <img src="./assets/img/architecture.svg" alt="web-design">
-            <h3 class="cat-title">Branding</h3>
-            <p class="cat-descr">
-              Semper lacus cursus porta, feugiat primis in ultrice ligula risus
-            </p>
+            <img class="cat-img" src="./assets/img/architecture.svg" alt="web-design">
+            <div class="category-con">
+              <h3 class="cat-title">Branding</h3>
+              <p class="cat-descr">
+                Semper lacus cursus porta, feugiat primis in ultrice ligula risus
+              </p>
+
+            </div>
           </div>
 
         </div>
       </div>
     </section>
     <section class="portfolio">
-      <p class="top-descr">Our Portfolio</p>
-      <h2 class="about-title">Creativity is our passion</h2>
-      <p class="about-bottom-descr">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo</p>
       <div class="container">
+        <p class="top-descr">Our Portfolio</p>
+        <h2 class="about-title">Creativity is our passion</h2>
+        <p class="about-bottom-descr">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo</p>
         <div class="btnContainer" id="myBtnContainer">
           <span data-filter='all' class="btn active">All</span>
           <span data-filter='nature' class="btn">Web Design</span>
           <span data-filter='cars' class="btn">Branding</span>
           <span data-filter='people' class="btn">Prototyping</span>
         </div>
-        <!-- Portfolio Gallery Grid -->
         <div class="grid-wrap">
           <div data-num=1 class="column nature">
             <img src="./assets/img/Mask Group 5.png" alt="Mountains">
@@ -208,20 +261,20 @@
             <img src="https://picsum.photos/id/237/600/300" alt="Car" style="width:100%">
           </div>
 
-          <!-- END GRID -->
+
         </div>
         <div data-pag='pag' class="paginator"></div>
+        <button class="btn-more">OUR PROJECTS</button>
       </div>
-      <button class="btn-more">OUR PROJECTS</button>
       <img class="small_triangle1" src="./assets/img/small_triangle2.png" alt="small_triangle1">
     </section>
     <section class="team">
-      <p class="top-descr">The Superheros</p>
-      <h2 class="about-title">Meet Our Team</h2>
-      <p class="about-bottom-descr">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo</p>
-
       <div class="container">
-        <div class="taam-wrap">
+        <p class="top-descr">The Superheros</p>
+        <h2 class="about-title">Meet Our Team</h2>
+        <p class="about-bottom-descr">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo</p>
+
+        <div class="team-wrap">
           <div class="team-img-cont">
             <img src="./assets/img/Image 6@2x.png" alt="team">
             <h3 class="team-title">Jhon Doe</h3>
@@ -243,10 +296,10 @@
     </section>
 
     <section class="clietns">
-      <p class="top-descr">Some of our Clients</p>
-      <h2 class="about-title">They Trust, We Deliver</h2>
-      <p class="about-bottom-descr">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo</p>
       <div class="container">
+        <p class="top-descr">Some of our Clients</p>
+        <h2 class="about-title">They Trust, We Deliver</h2>
+        <p class="about-bottom-descr">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo</p>
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
@@ -281,10 +334,10 @@
     </section>
 
     <section class="reviews">
-      <p class="top-descr">Testimonial</p>
-      <h2 class="about-title">What Our Client Are Saying</h2>
-      <p class="about-bottom-descr">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo</p>
       <div class="container">
+        <p class="top-descr">Testimonial</p>
+        <h2 class="about-title">What Our Client Are Saying</h2>
+        <p class="about-bottom-descr">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo</p>
         <div class="glide-reviews">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
@@ -361,14 +414,132 @@
     </section>
 
     <section class="pricing">
-      <p class="top-descr">Pricing for You</p>
-      <h2 class="about-title">Not Any Hidden Charges, Choose Your Plan</h2>
-      <p class="about-bottom-descr">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo</p>
-      <img class="figure" src="./assets/img/img33.png" alt="img">
       <div class="container">
-        fdfd
+        <p class="top-descr">Pricing for You</p>
+        <h2 class="about-title">Not Any Hidden Charges, Choose Your Plan</h2>
+        <p class="about-bottom-descr">An enim nullam tempor sapien gravida donec enim ipsum blandit porta justo</p>
+        <img class="figure" src="./assets/img/img33.png" alt="img">
+        <div class="price-wrap">
+          <div class="price-card">
+            <img class="img-card" src="./assets/img/card1.svg" alt="card">
+            <h4 class="price-title">Basic</h4>
+            <hr>
+            <div class="greater-wrap">
+              <p>Upto <spam class="greater">5</spam> users</p>
+              <p>Max <spam class="greater">100</spam> visit/mo</p>
+            </div>
+
+            <hr>
+            <div class="bottom-price-wrap">
+              <a class="button-card" href="">Start your free Trial</a>
+              <div class="prece">
+                <p><span class="dollar">$</span>9<span class="mon">/mo</span></p>
+              </div>
+            </div>
+
+          </div>
+          <div class="price-card">
+            <img class="img-card" src="./assets/img/card2.svg" alt="card">
+            <h4 class="price-title">Premium</h4>
+            <hr>
+            <div class="greater-wrap">
+              <p>Upto 15 users</p>
+              <p>Max <spam class="greater">500</spam> visit/mo</p>
+            </div>
+            <hr>
+            <div class="bottom-price-wrap">
+              <a class="button-card" href="">Start your free Trial</a>
+              <div class="prece">
+                <p><span class="dollar">$</span>19<span class="mon">/mo</span></p>
+              </div>
+            </div>
+
+          </div>
+          <div class="price-card">
+            <img class="img-card" src="./assets/img/card3.svg" alt="card">
+            <h4 class="price-title">Basic</h4>
+            <hr>
+            <div class="greater-wrap">
+              <p>
+                <spam class="greater">Unlimited</spam> users
+              </p>
+              <p>
+                <spam class="greater">Unlimited</spam> visit/mo
+              </p>
+            </div>
+            <hr>
+            <div class="bottom-price-wrap">
+              <a class="button-card" href="">Start your free Trial</a>
+              <div class="prece">
+                <p><span class="dollar">$</span>29<span class="mon">/mo</span></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </section>
+
+    <section class="help">
+      <div class="container">
+        <div class="help-wrap">
+          <div class="h-left">
+            <h3 class="h-title">Need something specific?</h3>
+            <h3 class="h-title">Let's discuss your next project</h3>
+            <p class="h-descr">Egestas magna egestas magna ipsum vitae purus ipsum primis in cubilia laoreet augue
+              luctus magna aenean
+              primis in augue
+              laoreet
+            </p>
+          </div>
+          <div class="h-right">
+            <a href="#" class="btn-more">Request for Free quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="left-foot">
+            <h3 class="foot-title">
+              Helgo
+            </h3>
+            <p class="foot-descr">
+              Aliquam orci nullam tempor sapien orci gravida donec enim ipsum porta justo at velna vitae auctor congue
+              magna laoreet
+              augue egestas
+            </p>
+          </div>
+          <div class="right-foot">
+            <div class="contact-wrap">
+              <h3 class="contact-title">Contact Us</h3>
+              <p class="contact-descr greater">hi@mail.com</p>
+              <p class="contact-descr">P: + 123 456 789</p>
+
+            </div>
+            <div class="contact-wrap">
+              <h3 class="contact-title">Explore</h3>
+              <ul class="menu-foot">
+                <li class="menu-item"><a href="#">About Us</a></li>
+                <li class="menu-item"><a href="#">Blog</a></li>
+                <li class="menu-item"><a href="#">Newsletter</a></li>
+                <li class="menu-item"><a href="#">Career</a></li>
+              </ul>
+            </div>
+            <div class="contact-wrap">
+              <h3 class="contact-title">Our Location</h3>
+              <p class="contact-descr">3991 Bryan Street</p>
+              <p class="contact-descr">Lexington, NC 27292</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright Yeasir Ahmed
+      </div>
+    </footer>
 
   </div>
 

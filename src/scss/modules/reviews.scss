@@ -4,9 +4,10 @@
 
 
   .reviews-item {
-    width: 556px;
+    max-width: 556px;
     margin: 0 auto;
     color: $danger-color;
+    text-align: center;
 
     .about-bottom-descr {
       line-height: rem(32);

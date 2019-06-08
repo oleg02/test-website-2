@@ -5,6 +5,7 @@
 .potr-cat-cont {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   .category {
     width: rem(246);
@@ -12,6 +13,7 @@
     flex-direction: column;
     text-align: center;
     position: relative;
+    margin-bottom: 2rem;
 
     .cat-title {
       font-size: rem(40);
@@ -39,6 +41,7 @@
 
     &:last-child:before {
       background-color: transparent;
+      width: 0;
     }
   }
 }

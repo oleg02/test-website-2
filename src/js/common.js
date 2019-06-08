@@ -7,6 +7,24 @@ window.addEventListener("load", function () {
   var div_num = document.querySelectorAll(".show");
   var cnt = 5; //сколько отображаем сначала
 
+  var search = document.getElementsByClassName('search');
+  var search_bar = document.getElementsByClassName('search-bar');
+
+
+
+  search[1].addEventListener("click", displayDate);
+  search[0].addEventListener("click", displayDate);
+  search[1].addEventListener("click", displayDate);
+  search[0].addEventListener("click", displayDate);
+
+
+  function displayDate() {
+    search[0].classList.toggle("active");
+    search[1].classList.toggle("active");
+    search_bar[0].classList.toggle("active");
+    search_bar[1].classList.toggle("active");
+  }
+
   filterSelection("all")
 
   window.addEventListener('click', hide, false);
@@ -94,7 +112,7 @@ window.addEventListener("load", function () {
   //выводим список страниц
   function listPages() {
     for (var i = 0; i < cnt_page; i++) {
-      page += "<span href=\"#\" data-page=" + i * cnt + "  id=\"page" + (i + 1) + "\"></span>";
+      page += "<span class=\"pagination\" href=\"#\" data-page=" + i * cnt + "  id=\"page" + (i + 1) + "\"></span>";
     }
     paginator.innerHTML = page;
     page = "";
@@ -145,3 +163,18 @@ window.addEventListener("load", function () {
   }
 
 })
+
+
+var btnMenu = document.getElementById('menu-button');
+var menu = document.getElementById('mobile-menu');
+var body = document.querySelector('body');
+
+btnMenu.addEventListener("click", show);
+
+function show() {
+  this.classList.toggle('active');
+  menu.classList.toggle('active');
+  body.classList.toggle('active');
+}
+
+
